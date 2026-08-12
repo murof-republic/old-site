@@ -1,0 +1,339 @@
+@import url('//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack.css');
+
+@font-face {
+    font-family: "GregorianFLF";
+    src: url('../fonts/GregorianFLF.ttf');
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: none;
+}
+
+a#select {
+    color: red;
+}
+
+::selection {
+    background-color: #f00000;
+    color: black;
+}
+
+#murof:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Hack, monospace;
+    background-color: black;
+    color: white;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.murof {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 3%;
+    margin-top: 2%;
+}
+
+.murof h1 {
+    font-family: 'GregorianFLF';
+    font-weight: normal;
+    font-size: 35pt;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 1%;
+    cursor: pointer;
+}
+
+.navigation {
+    padding: 1.5%;
+    margin-right: 3.5%;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation ul li {
+    display: inline;
+    text-align: center;
+    text-transform: capitalize;
+    margin-inline: 5px;
+}
+
+.navigation ul li:hover {
+    text-decoration: underline;
+    color: #B22222;
+}
+
+.artes {
+    margin-top: 4%;
+    margin-inline: 3%;
+}
+
+.artes h2, p {
+    margin: 0;
+}
+
+.content_artes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px #363636 solid ;
+    padding-bottom: 2%;
+}
+
+.content-imagem {
+    position: relative;
+    width: 16%;
+    height: 330px;
+    margin-top: 2%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #363636;
+    overflow: hidden;
+    max-width: none;
+    transition: all 0.2s ease-out;
+}
+
+.content-imagem:hover {
+    border: 1px solid #363636;
+}
+
+.artes-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px; 
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.artes-img:hover {
+    transform: scale(1.1);
+}
+
+.text-overlay {
+    position: absolute;
+    padding-top: 2%;
+    padding-bottom: 10%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.text-overlay h4 {
+    padding-top: 2%;
+    padding-bottom: 1%;
+    margin: 0;
+    padding: 0;
+}
+
+.text-overlay p {
+    color: white;
+    margin: 0;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 999;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+    transform: scale(0.7);
+    transition: transform 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal.show {
+    opacity: 1;
+}
+
+.modal-content.show {
+    transform: scale(1);
+}
+
+.artistas {
+    margin-top: 2%;
+    margin-inline: 3%;
+}
+
+.artistas h2, p {
+    margin: 0;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content_cards {
+    background-color: black;
+    border: 1px solid #363636;
+    border-radius: 10px;
+    padding: 20px;
+    width: 330px;
+    height: 170px;
+    margin-block: 1%;
+    min-width: none;
+    transition: all 0.2s ease-out;
+}
+
+.content_cards:hover {
+    transform: scale(1.05);
+    transition: all 0.2s ease-out;
+    border: 1px #B22222 solid;
+    cursor: pointer;
+}
+
+.icon-user {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.id {
+    font-size: 13pt;
+    margin: 0%;
+}
+
+.bio {
+    font-size: 12pt;
+    margin: 0;
+    margin-top: 1%;
+}
+
+@media (pointer: coarse) {
+    body {
+        background-image: none;
+        overflow: visible;
+    }
+
+    .murof {
+        display: block;
+        justify-content: none;
+        margin-inline: none;
+        margin-top: 2%;
+    }
+    
+    .murof h1 {
+        font-size: 30pt;
+        text-align: center;
+        margin-inline: auto;
+    }
+    
+    .navigation {
+        text-align: center;
+        padding: none;
+        margin-right: none;
+        margin-inline: auto;
+    }
+    
+    .navigation ul li {
+        font-size: 11pt;
+    }
+
+    .artes h2, p {
+        text-align: center;
+        margin-inline: auto;
+    }
+    
+    .content_artes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-inline: auto;
+        margin-block: 3%;
+        text-align: center;
+    }
+
+    .content-imagem {
+        width: 90%;
+        height: 180px;
+    }
+
+    .artes-img:hover {
+        transform: none;
+    }
+
+    .text-overlay {
+        padding-bottom: 3%;
+    }
+
+    .modal {
+        background: black;
+        backdrop-filter: none;
+    }
+
+    .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+    }
+
+    .artistas h2, p {
+        text-align: center;
+        margin-inline: auto;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-inline: auto;
+        margin-block: 3%;
+        text-align: center;
+    }
+
+    .content_cards {
+        width: 80%;
+        height: 180px;
+        margin-inline: auto;
+    }
+    
+    .content_cards:hover {
+        transform: none;
+        transition: none;
+        border: 1px #363636 solid;
+    }
+}

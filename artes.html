@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mural de Artes, todos os desenhos aqui foram feitos pelo pessoal do servidor.">
+    <meta name="keywords" content="Murof, comunidade, discord, forum, servidor,New Murof Republic, arte, desenho, programação">
+    <title>Murof | Artes</title>
+    <link rel="stylesheet" href="css/artes.css">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <meta property="og:title" content="Murof.org - Artes">
+    <meta property="og:description" content="Mural de Artes, todos os desenhos aqui foram feitos pelo pessoal do servidor.">
+    <meta property="og:url" content="https://murof.org/">
+    <meta property="og:image" content="/img/newmurof.png">
+    <meta property="og:type" content="website">
+    <script src="scripts/breadcrumbs.js"></script>
+</head>
+<body oncontextmenu="return false">
+    <div class="murof">
+        <header>
+            <a href="index.html" id="murof"><h1>murof</h1></a>
+        </header>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="wiki.html">wiki</a></li>
+                <li><a href="artes.html" id="select">artes</a></li>
+                <li><a href="apoiadores.html">apoiadores</a></li>
+            </ul>
+        </nav>
+    </div>
+    <article class="artes">
+        <header>
+            <h2>Artes</h2>
+            <p>Mural de Artes, todos os desenhos aqui foram feitos pelo pessoal do servidor.</p>       
+        </header>
+        <section class="content_artes">
+            <div class="content-imagem">
+                <img src="img/Tubarina.webp" alt="Tubarina, feita por Lasanha." class="artes-img" onclick="openModal(this)">
+                <div class="text-overlay">
+                    <h4>Tubarina</h4>
+                    <p>Lasanha</p>
+                </div>
+            </div>
+            <div class="content-imagem">
+                <img src="img/hanna.webp" alt="Hanna, feita por Lasanha." class="artes-img" onclick="openModal(this)">
+                <div class="text-overlay">
+                    <h4>Hanna</h4>
+                    <p>Lasanha</p>
+                </div>
+            </div>
+            <div class="content-imagem">
+                <img src="img/the_night.webp" alt="The Night, feita por Lasanha." class="artes-img" onclick="openModal(this)">
+                <div class="text-overlay">
+                    <h4>The Night</h4>
+                    <p>Lasanha</p>
+                </div>
+            </div>
+            <div class="content-imagem">
+                <img src="img/quadrados.webp" alt="Quadrados, feito por Nyny." class="artes-img" onclick="openModal(this)">
+                <div class="text-overlay">
+                    <h4>Quadrados</h4>
+                    <p>Annye</p>
+                </div>
+            </div>
+            <div class="content-imagem">
+                <img src="img/waffle.webp" alt="Waffle, feito por Mokhat." class="artes-img" onclick="openModal(this)">
+                <div class="text-overlay">
+                    <h4>Waffle</h4>
+                    <p>Mokhat</p>
+                </div>
+            </div>
+            <div id="myModal" class="modal" onclick="closeModal(event)">
+                <span class="close" onclick="closeModal(event)"></span>
+                <img class="modal-content" id="img01">
+            </div>
+        </section>
+    </article>
+    <article class="artistas">
+        <header>
+            <h2>Artistas</h2>
+            <p>
+            Área para creditar todos os artistas, obrigado!</p>
+        </header>
+        <section class="cards">
+            <div class="content_cards">
+                <img src="img/icon_user/2539a0fa7018ff7ecb5820f87956da51.png" class="icon-user" alt="Lasanha">
+                <header>
+                    <h2 class="id">Lasanha</h2>
+                </header>
+                <p class="bio">
+                    ⓘ User is suspected to be part of an online terrorist organization. Please report any suspicious activity to Discord staff.
+                </p> 
+            </div>
+            <div class="content_cards">
+                <img src="img/icon_user/9e80b7fdfe7a3d0f036221693753e20b.png" class="icon-user" alt="Annye">
+                <header>
+                    <h2 class="id">Annye</h2>
+                </header>
+                <p class="bio">
+                    • Tenho medo de MySQL.
+                </p> 
+            </div>
+            <div class="content_cards">
+                <img src="img/icon_user/a261337b85ba3156ca1187485a0a0fca.jpeg" class="icon-user" alt="Mokhat">
+                <header>
+                    <h2 class="id">Mokhat<a href="https://mokhat.neocities.org/" target="_blank" id="select">.neo</a></h2>
+                </header>
+                <p class="bio">
+                    This is what they did after having taken their guns from Dukedom.
+                </p> 
+            </div>
+        </section>
+    </article>
+    <script src="scripts/artes.js"></script>
+</body>
+</html>
